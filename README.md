@@ -3,7 +3,7 @@
 JWT Authentication handler is a custom implementation for securing the service/API with JWT assertion.
 
 #### Example
-![Screenshot](doc/images/JWTAuthendicationHandler_Latest.jpg)
+![Screenshot](doc/images/JWTAuthenticationHandler_Latest.jpg)
 
 As illustrated in the above image, Client makes a request to API1 in WSO2 API Manager Gateway with the access token, Once the token validated in the WSO2 API Manager's Key Manager profile; it [generates JWT assertion](https://docs.wso2.com/display/AM210/Passing+Enduser+Attributes+to+the+Backend+Using+JWT) and passed to the API1 Service via Gateway. API1 Service needs to access another API2 in WSO2 API Manager Gateway but at the given time there will be no access token but only the JWT assertion. When the API1 Service invokes API2 with JWT assertion, JWT Authentication handler validates the signature and allow to invoke the API2 Service.
 
